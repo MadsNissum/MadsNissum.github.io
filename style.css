@@ -5,8 +5,6 @@
 }
 
 body {
-    padding: 0;
-    margin: 0;
     background: linear-gradient(to right, rgb(157, 0, 219), rgb(80, 15, 231));
 }
 
@@ -55,4 +53,18 @@ body {
 .output .current-operand {
     color: white;
     font-size: 2.5rem;
+}
+
+.topnav {
+    background-color: rgb(90, 90, 90);
+    overflow: hidden;
+    text-align: center;
+    margin: -8px;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+}
+
+.topnav a {
+    padding: 50px 50px;
 }
