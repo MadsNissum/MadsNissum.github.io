@@ -1,18 +1,16 @@
 .topnav {
     background-color: rgb(36, 37, 38);
     text-align: center;
-    margin: -8px;
-    padding: 0px;
     position: sticky;
     top: 0;
     border-bottom: 2px solid rgb(57, 58, 59);
-    overflow-y: hidden;
-    overflow: auto;
+    overflow: hidden;
 }
+
 
 .topnav button {
     padding: 10px 100px;
-    margin: 0px 0px 0px -6px;
+    margin: -3px;
     color: none;
     border: none;
     border-left: 2px solid rgb(57, 58, 59);
@@ -21,6 +19,27 @@
 }
 
 
+
+
 .topnav button:hover {
     background-color: rgba(173, 173, 173);
+}
+
+body {
+    background-color: rgb(24, 25, 26);
+    margin: 0;
+}
+
+.text {
+    font-family: sans-serif;
+    color: rgb(228, 230, 235);
+    
+}
+
+.name {
+    position: fixed;
+    padding: 0px 20px 0px;
+    color: rgb(130, 151, 204);
+    margin: 10px;
+    font-size: 30px;
 }
