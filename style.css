@@ -26,13 +26,15 @@
 }
 
 body {
-    background-color: rgb(24, 25, 26);
+    background: linear-gradient(to bottom, rgb(24, 25, 26), rgb(57, 58, 59));
     margin: 0;
+    height: 100vh;
 }
 
 .text {
     font-family: sans-serif;
     color: rgb(228, 230, 235);
+    padding: 0px 0px 0px 20px;
     
 }
 
