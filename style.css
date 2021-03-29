@@ -1,32 +1,43 @@
 .topnav {
-    background-color: rgb(36, 37, 38);
+    background-color: rgb(60, 61, 62);
     text-align: center;
     position: sticky;
     top: 0;
-    border-bottom: 2px solid rgb(57, 58, 59);
+    border-bottom: 2px solid rgb(30, 31, 32);
     overflow: hidden;
 }
 
 
 .topnav button {
-    padding: 10px 100px;
-    margin: -3px;
-    color: none;
-    border: none;
-    border-left: 2px solid rgb(57, 58, 59);
-    border-right: 2px solid rgb(57, 58, 59);
     background-color: transparent;
+    fill:rgb(230, 230, 230);
+    border-left: 2px solid rgb(30, 31, 32);
+    border-right: 2px solid rgb(30, 31, 32);
 }
 
+.nightmode {
+    padding: 3px 3px 0px 3px;
+    position: fixed;
+    right: 100px;
+    top: 3px;
+    border-top: 2px solid rgb(30, 31, 32);
+    border-radius: 30px;
+}
 
-
+.midbuttons {
+    color: none;
+    padding: 10px 100px;
+    margin: -3px;
+    border: none;
+}
 
 .topnav button:hover {
-    background-color: rgba(173, 173, 173);
+    cursor: pointer;
+    background-color: rgb(100, 100, 100);
 }
 
 body {
-    background: linear-gradient(to bottom, rgb(24, 25, 26), rgb(57, 58, 59));
+    background: rgb(53, 54, 58);
     margin: 0;
     height: 100vh;
 }
@@ -54,3 +65,15 @@ body {
     margin: 0px;
     font-size: 20px;
 }
+
+.bx-library {
+    width: 50px;
+    height: 50px;
+}
+
+
+/*
+@media (prefers-color-scheme: dark) {
+
+}
+*/

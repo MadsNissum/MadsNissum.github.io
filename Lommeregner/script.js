@@ -18,17 +18,19 @@ const currentOperandTextElement = document.querySelector('[data-current-operand]
 numberButtons.forEach(n => n.addEventListener('click', () => {currentOperandTextElement.innerHTML = currentOperandTextElement.innerHTML + n.innerHTML}));
 
 //Event for clearing numbers in CurrentOperandTextElement
-allClearButtons.addEventListener('click', () => {currentOperandTextElement.innerHTML = ''});
+allClearButtons.addEventListener('click', () => {
+currentOperandTextElement.innerHTML = '';
+previousOperandTextElement.innerHTML = '';
+});
 
 //Event for deleting one number in CurrentOperandTextElement
 deleteButtons.addEventListener('click', () => {currentOperandTextElement.innerHTML = currentOperandTextElement.innerHTML.slice(0,-1)});
 
 //Event for operations
 operationButtons.forEach(n => n.addEventListener('click', () => {
-
-
-
-
+currentOperandTextElement.innerHTML = currentOperandTextElement.innerHTML + ' ' + n.innerHTML;
+previousOperandTextElement.innerHTML = currentOperandTextElement.innerHTML;
+currentOperandTextElement.innerHTML = '';
 }))
 
 function addNumberString(number, addNumberToString) {
